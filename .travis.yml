@@ -132,4 +132,4 @@ matrix:
     
     - language: nix
       script: 
-        - "nix-shell -I nixpkgs=https://github.com/nixos/nixpkgs/archive/nixpkgs-unstable.tar.gz -p 'far2l.overrideAttrs (_: { src = $TRAVIS_BUILD_DIR; })'"
+        - "nix-shell -I nixpkgs=https://github.com/nixos/nixpkgs/archive/nixpkgs-unstable.tar.gz -p 'far2l.overrideAttrs (_: { src = .; })'"
